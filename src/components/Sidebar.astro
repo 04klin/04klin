@@ -15,14 +15,14 @@ const { selectedItem } = Astro.props;
     <a href="/" class="w-nav-brand" aria-label="home">
       <div class="niv-data">
         <img
-          src="/assets/sam.jpg"
+          src="/assets/tokyo_pfp.png"
           loading="eager"
           alt="Profile picture"
           class="niv-image"
         />
         <div>
-          <div class="label-white">Sam Bernstein</div>
-          <div class="label-gray">Software Engineer</div>
+          <div class="label-white">Kevin Lin</div>
+          <div class="label-gray">Computer Science Student</div>
         </div>
       </div>
     </a>
@@ -43,12 +43,12 @@ const { selectedItem } = Astro.props;
         <div>Home</div>
       </a>
       <a
-        href="/software-development"
+        href="/work-experience"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'software-development' ? 'w--current' : ''
+          selectedItem === 'work-experience' ? 'w--current' : ''
         }`}
         aria-current={
-          selectedItem === 'software-development' ? 'page' : undefined
+          selectedItem === 'work-experience' ? 'page' : undefined
         }
       >
         <img
@@ -57,35 +57,35 @@ const { selectedItem } = Astro.props;
           alt=""
           class="nav-link-image"
         />
-        <div>Software development</div>
+        <div>Work Experience</div>
       </a>
       <a
-        href="/devops"
+        href="/projects"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'devops' ? 'w--current' : ''
+          selectedItem === 'projects' ? 'w--current' : ''
         }`}
       >
         <img
-          src="/assets/dns.svg"
+          src="/assets/code-solid.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
         />
-        <div>DevOps</div>
+        <div>projects</div>
       </a>
       <a
-        href="/personal-projects"
+        href="/photography"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'personal-projects' ? 'w--current' : ''
+          selectedItem === 'photography' ? 'w--current' : ''
         }`}
       >
         <img
-          src="/assets/favorite.svg"
+          src="/assets/camera-solid-full.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
         />
-        <div>Personal projects</div>
+        <div>photography</div>
       </a>
     </nav>
 
